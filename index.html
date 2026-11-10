@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vaishnavi Sundar | Portfolio</title>
+<meta name="description" content="Portfolio of Vaishnavi Sundar, Computer Science student and frontend developer.">
+<style>
+:root{--bg:#0b1020;--card:#141a30;--line:#ffffff1a;--text:#f4f4ff;--mute:#a5acc5;--a:#a78bfa;--b:#7dd3fc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:radial-gradient(ellipse at 50% 0,#252052 0,transparent 55%),var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--b);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1050px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;flex-wrap:wrap;gap:10px}
+nav b{font-size:18px}
+nav div a{color:var(--mute);margin-left:18px;font-size:14px}
+.hero{padding:70px 0 50px}
+.hero small{color:#c4b5fd;letter-spacing:1px;font-weight:600}
+h1{font-size:clamp(36px,7vw,64px);line-height:1.1;margin:14px 0;letter-spacing:-2px}
+.g{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:640px;color:var(--mute);font-size:17px}
+.btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:12px;font-weight:700;border:1px solid var(--line);color:var(--text)}
+.btn.p{background:linear-gradient(110deg,#8057e8,#6259ed);border:0}
+.btn:hover{text-decoration:none;opacity:.9}
+section{padding:46px 0}
+h2{font-size:28px;margin:0 0 22px;letter-spacing:-.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:linear-gradient(145deg,#171d33,#111729);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p,.card li{color:var(--mute);font-size:14px}
+.card ul{padding-left:18px;margin:8px 0}
+.tag{display:inline-block;font-size:12px;padding:4px 10px;border-radius:20px;background:#8b5cf61c;color:#c4b5fd;margin:3px 4px 0 0}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center}
+.proj img{width:100%;border-radius:14px;border:1px solid var(--line);display:block;margin-bottom:10px}
+.badge{font-size:12px;color:#7dd3fc;font-weight:700;letter-spacing:.8px}
+.links a{margin-right:16px;font-weight:600;font-size:14px}
+footer{padding:40px 0;color:#747e99;font-size:13px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+@media(max-width:760px){.proj{grid-template-columns:1fr}nav div a{margin-left:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Vaishnavi<span class="g"> Sundar</span></b>
+<div><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certs">Certificates</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<small>COMPUTER SCIENCE STUDENT · FRONTEND DEVELOPER</small>
+<h1>Hi, I'm <span class="g">Vaishnavi Sundar</span></h1>
+<p>I build responsive, user-friendly web products with React and the MERN stack, and I enjoy solving problems with Java and C++.</p>
+<div class="btns"><a class="btn p" href="#projects">View my projects</a><a class="btn" href="https://github.com/vaishnaviii18">GitHub</a><a class="btn" href="https://www.linkedin.com/in/vaishnavi-sundar-2b2926326">LinkedIn</a></div>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<div class="grid">
+<div class="card"><h3>Objective</h3><p>Computer Science student with a strong foundation in Java and building secure, efficient systems. Passionate about software technology with a proactive and adaptable mindset, actively engaged in building products and problem-solving to create impactful and future-ready solutions.</p></div>
+<div class="card"><h3>Education</h3>
+<p><b>Bachelor of Computer Science</b><br>KPR College of Arts Science and Research, 2024 – 2027<br>CGPA 8.0 / 10 up to IV semester</p>
+<p><b>Cluny Matriculation Higher Secondary School</b><br>2024: Class 10 – 79.9%, Class 12 – 74.0%</p></div>
+<div class="card"><h3>Awards and activities</h3>
+<ul><li>State level, Chess</li><li>State level, Skating</li><li>Extra-Curricular Head, organising department events</li><li>Co-Chair of Entrepreneurship initiatives, YI Yuva club</li><li>University level chess player</li></ul></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card proj" style="margin-bottom:22px">
+<div><span class="badge">FEATURED · LIVE</span><h3>SpeakSmart AI</h3>
+<p>A full-stack presentation practice app. Upload a PDF or DOCX, record your speech, and get a Groq Whisper transcript with feedback on filler words, pace and sentence length, plus a results dashboard and practice history.</p>
+<div><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Groq API</span><span class="tag">Vercel</span><span class="tag">Render</span></div>
+<p class="links" style="margin-top:14px"><a href="https://speak-smart-ai-sigma.vercel.app">Live app</a><a href="https://github.com/vaishnaviii18/SpeakSmart-AI">Code</a><a href="https://speaksmart-backend-0ine.onrender.com">Backend API</a></p></div>
+<div class="card" style="background:#0e1326"><b>Architecture</b>
+<ul><li>Frontend on Vercel (React + Vite)</li><li>Backend on Render (Node + Express)</li><li>Speech-to-text with Groq Whisper (whisper-large-v3-turbo)</li></ul>
+<p>The backend runs on a free plan and may take up to 50 seconds to wake on the first visit.</p></div>
+</div>
+
+<div class="card proj">
+<div><span class="badge">FEATURED · LIVE</span><h3>Nucleus</h3>
+<p>A brand-focused web platform for Nucleus, a white-label video editing service for performance marketing agencies. I worked on the frontend: a responsive website with page layouts, animations and a user-friendly interface that communicates the brand clearly.</p>
+<div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span></div>
+<p class="links" style="margin-top:14px"><a href="https://nucleuscreate.in">Live site</a><a href="https://github.com/vaishnaviii18/nucleus">Code</a></p></div>
+<div><img src="img/nucleus-1.jpg" alt="Nucleus website hero section"><img src="img/nucleus-2.jpg" alt="Nucleus website proof section" style="margin-bottom:0"></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Programming</h3><span class="tag">Java</span><span class="tag">C++</span><span class="tag">SQL</span></div>
+<div class="card"><h3>Frontend</h3><span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">MERN stack</span></div>
+<div class="card"><h3>Tools</h3><span class="tag">VS Code</span><span class="tag">GitHub</span><span class="tag">Docker</span></div>
+<div class="card"><h3>Soft skills</h3><span class="tag">Leadership</span><span class="tag">Resilient</span><span class="tag">Problem solving</span></div>
+</div>
+</section>
+
+<section id="certs">
+<h2>Certificates and experience</h2>
+<div class="grid">
+<div class="card"><h3>Web Development Intern, Cognifyz Technologies</h3><p>Internship completed, June to July 2026.</p></div>
+<div class="card"><h3>HackerRank, Java (Basic)</h3><p>Skill certification earned 21 May 2026.</p></div>
+<div class="card"><h3>freeCodeCamp</h3><p>Legacy Responsive Web Design v8 certification.</p></div>
+<div class="card"><h3>Smart India Hackathon 2025</h3><p>Participant.</p></div>
+<div class="card"><h3>IIC Hackathon Challenge 2026</h3><p>Participant.</p></div>
+<div class="card"><h3>RoboMiracle-AI</h3><p>One day workshop.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card"><p>Language: French (reading, writing)</p>
+<p class="links"><a href="https://www.linkedin.com/in/vaishnavi-sundar-2b2926326">LinkedIn</a><a href="https://github.com/vaishnaviii18">GitHub</a><a href="https://leetcode.com/u/vaishnavisundar/">LeetCode</a></p></div>
+</section>
+</div>
+<footer>© 2026 Vaishnavi Sundar</footer>
+</body>
+</html>
